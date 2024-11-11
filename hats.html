@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帽子魔法館 - 商店</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="hats.html">帽子試戴</a></li>
+                <li><a href="member.html">會員專區</a></li>                   
+            </ul>
+        </nav>  
+    </header>
+    
+
+    <main>
+        <h1 style="color:rgb(127, 137, 253) ;">帽子魔法館</h1>
+
+        <section class="latest-hats">
+            <h2>最新帽子</h2>
+            <div class="latest-grid"></div> <!-- 確認這裡是否正確 -->
+        </section>
+        
+        <section class="shop-container">
+            <h2>帽子展示</h2>
+            <div class="filter-options">
+                <button onclick="displayAllHats()">全部</button>
+
+                <button onclick="filterHats('實用')">實用</button>
+                <button onclick="filterHats('造型')">造型</button>
+                <button onclick="filterHats('可愛')">可愛</button>
+                <button onclick="filterHats('典雅')">典雅</button>
+                <button onclick="filterHats('透氣')">透氣</button>
+                <button onclick="filterHats('活潑')">活潑</button>
+                <button onclick="filterHats('防水')">防水</button>
+
+            </div>
+
+            <div class="product-grid"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
